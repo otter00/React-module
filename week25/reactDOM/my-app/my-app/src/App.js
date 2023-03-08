@@ -14,7 +14,15 @@ export const data = [
 
 export const options = {
   title: "My Everyday Activities",
+  pieSliceText: "none",
   is3D: true,
+  slices: {
+    0: { color: "red" },
+    1: { color: "orange" },
+    2: { color: "yellow" },
+    3: { color: "lightgreen" },
+    4: { color: "violet" },
+  },
 };
 
 export function App() {
