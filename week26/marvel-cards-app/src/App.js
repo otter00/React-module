@@ -102,18 +102,16 @@ class App extends React.Component {
     return (
       <div className="gallery__container"> {
           cards.map((card) =>
-          <div class='gallery__card'>
-          <h2 class='card__name'>{card.name}</h2> 
-          <form action="#">
-          <h3>{card.universe}</h3>
-          <span class='alterego'>{card.alterego}</span> 
-          <span><p class='bold__text'>Специализация:</p>{card.occupation}</span>
-          <span><p class='bold__text'>Союзники:</p>{card.friends}</span>
-          <span><p class='bold__text'>Суперспособности:</p>{card.superpowers}</span> 
-          <div><img src={card.url} /></div>
-          <p>{card.info}</p>
-          </form>
-          </div>
+          <Card 
+          name={card.name} 
+          universe={card.universe} 
+          alterego={card.alterego}
+          occupation={card.occupation}
+          friends={card.friends}
+          superpowers={card.superpowers}
+          url={card.url}
+          info={card.info}
+          ></Card>
           )
       }
       </div>
