@@ -101,8 +101,8 @@ class App extends React.Component {
   render () {
     return (
       <div className="gallery__container"> {
-          cards.map((card) =>
-          <Card 
+          cards.map((card, i) =>
+          <Card key={i}
           name={card.name} 
           universe={card.universe} 
           alterego={card.alterego}
