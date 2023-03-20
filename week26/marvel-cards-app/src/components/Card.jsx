@@ -5,7 +5,7 @@ import "./card.css";
 
 function Card(props) {
   return (
-    <div className="gallery__card" key={props.key}>
+    <div className="gallery__card" key={props.id}>
       <h2 className="card__name">{props.name}</h2>
       <form action="#">
         <h3>{props.universe}</h3>
