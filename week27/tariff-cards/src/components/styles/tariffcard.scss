@@ -1,0 +1,57 @@
+@import './variables.scss';
+
+* {
+    border: 1px solid white;
+}
+
+.price-value {
+    border: none;
+
+    font-size: 72px;
+    font-weight: 600;
+}
+
+.card {
+    display: grid;
+    grid-template-rows: 60% 40%;
+
+    .card-body {
+        display: grid;
+        grid-template-rows: 30% 70%;
+
+        .limit-info {
+            background-color: rgb(54, 165, 180);
+
+            @include bodyFont;
+            font-size: 24px;
+
+            display: flex;
+            justify-content: center;
+            padding: 7% 0 10% 0;
+        }
+
+        .price-per-month {
+            background-color: rgb(73, 195, 211);
+
+            @include bodyFont;
+            padding: 10% 0 10% 0;
+        }
+    }
+
+    .card-footer {
+        display: flex;
+        flex-direction: column;
+
+        .tarif-traffic {
+            background-color: rgb(236, 236, 236);
+
+            @include footerFont;
+        }
+
+        .card-text {
+            background-color: rgb(219, 219, 219);
+
+            @include footerFont;
+        }
+    }
+}

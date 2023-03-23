@@ -1,0 +1,15 @@
+$backroundRed: rgb(216, 43, 43);
+
+@mixin footerFont {
+    padding: 10%;
+    font-size: 21px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: rgb(88, 88, 88);
+}
+
+@mixin bodyFont {
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: white;
+}
