@@ -10,7 +10,7 @@ const cards = [{
   id: 1,
   fare: 300, 
   price: 300,
-  traffic: 10 
+  traffic: 10
 }, {
   id: 2,
   fare: 450, 
