@@ -4,7 +4,7 @@
     border: 1px solid white;
 }
 
-.price-value {
+.price_value {
     border: none;
 
     font-size: 72px;
@@ -15,12 +15,12 @@
     display: grid;
     grid-template-rows: 60% 40%;
 
-    .card-body {
+    .card_body {
         display: grid;
         grid-template-rows: 30% 70%;
 
-        .limit-info {
-            background-color: rgb(54, 165, 180);
+        .limit_info {
+            //background-color: rgb(54, 165, 180);
 
             @include bodyFont;
             font-size: 24px;
@@ -30,25 +30,25 @@
             padding: 7% 0 10% 0;
         }
 
-        .price-per-month {
-            background-color: rgb(73, 195, 211);
+        .price_per_month {
+            //background-color: rgb(73, 195, 211);
 
             @include bodyFont;
             padding: 10% 0 10% 0;
         }
     }
 
-    .card-footer {
+    .card_footer {
         display: flex;
         flex-direction: column;
 
-        .tarif-traffic {
+        .tarif_traffic {
             background-color: rgb(236, 236, 236);
 
             @include footerFont;
         }
 
-        .card-text {
+        .card_text {
             background-color: rgb(219, 219, 219);
 
             @include footerFont;

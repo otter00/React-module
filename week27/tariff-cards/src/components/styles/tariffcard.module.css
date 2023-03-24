@@ -2,7 +2,7 @@
   border: 1px solid white;
 }
 
-.price-value {
+.price_value {
   border: none;
   font-size: 72px;
   font-weight: 600;
@@ -12,30 +12,28 @@
   display: grid;
   grid-template-rows: 60% 40%;
 }
-.card .card-body {
+.card .card_body {
   display: grid;
   grid-template-rows: 30% 70%;
 }
-.card .card-body .limit-info {
+.card .card_body .limit_info {
   font-weight: 500;
   letter-spacing: 1px;
-  color: white;
   font-size: 24px;
   display: flex;
   justify-content: center;
   padding: 7% 0 10% 0;
 }
-.card .card-body .price-per-month {
+.card .card_body .price_per_month {
   font-weight: 500;
   letter-spacing: 1px;
-  color: white;
   padding: 10% 0 10% 0;
 }
-.card .card-footer {
+.card .card_footer {
   display: flex;
   flex-direction: column;
 }
-.card .card-footer .tarif-traffic {
+.card .card_footer .tarif_traffic {
   background-color: rgb(236, 236, 236);
   padding: 10%;
   font-size: 21px;
@@ -43,11 +41,11 @@
   letter-spacing: 1px;
   color: rgb(88, 88, 88);
 }
-.card .card-footer .card-text {
+.card .card_footer .card_text {
   background-color: rgb(219, 219, 219);
   padding: 10%;
   font-size: 21px;
   font-weight: 400;
   letter-spacing: 1px;
   color: rgb(88, 88, 88);
-}/*# sourceMappingURL=tariffcard.css.map */
+}/*# sourceMappingURL=tariffcard.module.css.map */

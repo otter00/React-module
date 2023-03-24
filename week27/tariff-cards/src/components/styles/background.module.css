@@ -1,0 +1,39 @@
+.backAqua {
+  background-color: rgb(73, 195, 211);
+  color: white;
+}
+
+.backGreen {
+  background-color: rgb(34, 180, 131);
+  color: white;
+}
+
+.backRed {
+  background-color: brown;
+  color: white;
+}
+
+.backBlack {
+  background-color: rgb(32, 32, 32);
+  color: white;
+}
+
+.backAquaHead {
+  background-color: rgb(76, 148, 157);
+  color: white;
+}
+
+.backGreenHead {
+  background-color: rgb(43, 138, 106);
+  color: white;
+}
+
+.backRedHead {
+  background-color: rgb(125, 41, 41);
+  color: white;
+}
+
+.backBlackHead {
+  background-color: rgb(17, 17, 17);
+  color: white;
+}/*# sourceMappingURL=background.module.css.map */
