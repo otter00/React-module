@@ -48,4 +48,8 @@
   font-weight: 400;
   letter-spacing: 1px;
   color: rgb(88, 88, 88);
+}
+
+.scaled {
+  transform: scale(1.05);
 }/*# sourceMappingURL=tariffcard.module.css.map */

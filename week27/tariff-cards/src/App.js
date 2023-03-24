@@ -11,6 +11,7 @@ import cn from 'classnames';
 
 let backBody;
 let backHead;
+let scaled;
 
 const cards = [{
   id: 1,
@@ -31,6 +32,7 @@ const cards = [{
   fare: 550, 
   price: 550,
   traffic: 100,
+  scaled: scaled = cn([`${tariffcard.scaled}`]),
   backHead: backHead = cn([`${tariffcard.limit_info}`, `${BackG.backRedHead}`]),
   backBody: backBody = cn([`${tariffcard.price_per_month}`, `${BackG.backRed}`])
 }, {
@@ -48,7 +50,7 @@ function App() {
     <div className="App"> {     
         cards.map((card, id) =>
         <TariffCard
-
+        scaled={card.scaled}
         backBody={card.backBody}
         backHead={card.backHead}
         key={id}

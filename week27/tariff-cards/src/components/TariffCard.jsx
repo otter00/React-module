@@ -3,9 +3,10 @@ import tariffcard from './styles/tariffcard.module.scss';
 
 export default class TariffCard extends React.Component {
     render() {
-        const {fare, price, traffic, backHead, backBody } = this.props;
+        const {fare, price, traffic, backHead, backBody, scaled } = this.props;
 
         return (
+            <div className={scaled}>
             <div className={tariffcard.card}>
                 <div className={tariffcard.card_body}>
 
@@ -19,6 +20,7 @@ export default class TariffCard extends React.Component {
 
                     <div className={tariffcard.card_text}>Объем включенного трафика не ограничен</div>
                 </div>     
+            </div>
             </div>
         );
     }
