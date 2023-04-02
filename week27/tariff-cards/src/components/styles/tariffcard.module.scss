@@ -15,6 +15,22 @@
     display: grid;
     grid-template-rows: 60% 40%;
 
+    &:checked {
+        +div {
+            transform: scale(1.05);
+
+            &::before {
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    &:disabled {
+        +div {
+            transform: scale(1);
+        }
+    }
+
     .card_body {
         display: grid;
         grid-template-rows: 30% 70%;
@@ -58,4 +74,5 @@
 
 .scaled {
     transform: scale(1.05);
+    border: 1px solid brown;
 }

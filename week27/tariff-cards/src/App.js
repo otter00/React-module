@@ -12,12 +12,14 @@ import cn from 'classnames';
 let backBody;
 let backHead;
 let scaled;
+let isSelected;
 
 const cards = [{
   id: 1,
   fare: 300, 
   price: 300,
   traffic: 10,
+  //scaled: scaled,
   backHead: backHead = cn([`${tariffcard.limit_info}`, `${BackG.backAquaHead}`]),
   backBody: backBody = cn([`${tariffcard.price_per_month}`, `${BackG.backAqua}`])
 }, {
@@ -25,6 +27,7 @@ const cards = [{
   fare: 450, 
   price: 450,
   traffic: 50,
+  //scaled: scaled,
   backHead: backHead = cn([`${tariffcard.limit_info}`, `${BackG.backGreenHead}`]),
   backBody: backBody = cn([`${tariffcard.price_per_month}`, `${BackG.backGreen}`])
 }, {
@@ -32,6 +35,8 @@ const cards = [{
   fare: 550, 
   price: 550,
   traffic: 100,
+  isSelected: true,
+  //scaled: scaled,
   scaled: scaled = cn([`${tariffcard.scaled}`]),
   backHead: backHead = cn([`${tariffcard.limit_info}`, `${BackG.backRedHead}`]),
   backBody: backBody = cn([`${tariffcard.price_per_month}`, `${BackG.backRed}`])
@@ -40,17 +45,20 @@ const cards = [{
   fare: 1000, 
   price: 1000,
   traffic: 200,
+  //scaled: scaled,
   backHead: backHead = cn([`${tariffcard.limit_info}`, `${BackG.backBlackHead}`]),
   backBody: backBody = cn([`${tariffcard.price_per_month}`, `${BackG.backBlack}`])
 }];
 
 function App() {
   //console.log(BackG);
+
   return (
     <div className="App"> {     
         cards.map((card, id) =>
         <TariffCard
-        scaled={card.scaled}
+        isSelected={card.isSelected}
+        //scaled={card.scaled}
         backBody={card.backBody}
         backHead={card.backHead}
         key={id}

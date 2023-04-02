@@ -12,6 +12,15 @@
   display: grid;
   grid-template-rows: 60% 40%;
 }
+.card:checked + div {
+  transform: scale(1.05);
+}
+.card:checked + div::before {
+  transform: scale(1.05);
+}
+.card:disabled + div {
+  transform: scale(1);
+}
 .card .card_body {
   display: grid;
   grid-template-rows: 30% 70%;
@@ -52,4 +61,5 @@
 
 .scaled {
   transform: scale(1.05);
+  border: 1px solid brown;
 }/*# sourceMappingURL=tariffcard.module.css.map */
