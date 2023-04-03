@@ -1,0 +1,6 @@
+.card__container {
+  background-color: grey;
+}
+.card__container .selected {
+  border: 1px solid orange;
+}/*# sourceMappingURL=Card.css.map */
