@@ -4,36 +4,29 @@ import cn from 'classnames';
 
 export default class TariffCard extends React.Component {
 
-    static defaultProps = {
-        checked: false,
-    };
-
     constructor(props) {
         super(props);
         this.state = {
-            checked: props.checked,
+            isClicked: false,
         };
     };
 
     handleChecked = () => {
         this.setState({
-            checked: !this.state.checked,
+            isClicked: !this.state.isClicked,
         });
     };
 
     render() {
-
         let classCard='';
-        const { checked } = this.state;
-        const {fare, price, traffic, backHead, backBody, scaled, isSelected } = this.props;
+        const {fare, price, traffic, backHead, backBody, scaled } = this.props;
         
-        if(isSelected) classCard = cn[`${TariffCard.scaled}`];
+        console.log(this.state.isClicked);
 
         return (
-            <div className={`${classCard}`} >
-            <div className={Tariffcard.card}
-                checked = { checked }
-                onClick={this.handleChecked}>
+            <div onClick={this.handleChecked} 
+            className={(this.state.isClicked ? scaled : '')}>
+            <div className={Tariffcard.card}>
                 <div className={Tariffcard.card_body}>
 
                     <div className={backHead}>Безлимитный {fare} </div>
@@ -45,7 +38,7 @@ export default class TariffCard extends React.Component {
                     <div className={Tariffcard.tarif_traffic}>До {traffic} Мбит/сек</div>
 
                     <div className={Tariffcard.card_text}>Объем включенного трафика не ограничен</div>
-                </div>     
+                </div >     
             </div>
             </div>
         );

@@ -13,3 +13,13 @@ export default class Card extends React.Component {
         );
     }
 }
+
+// export default class Example extends React.Component {
+//     render() {
+// 				let {description,title} = this.props
+// 				title += description; //title = title + description
+//          return (
+//             <span>{title}</span>
+//         );
+//     }
+// }

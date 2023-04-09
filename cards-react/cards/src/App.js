@@ -32,6 +32,9 @@ function App () {
       <div>
         <div className="card__container">
           {
+            // <Card
+            // title='some'
+            // description='string'></Card>
             cards.map((card,id)=>
             <Card 
             id={id}
