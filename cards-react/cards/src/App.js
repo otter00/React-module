@@ -31,7 +31,8 @@ function App () {
     return (
       <div>
         <div className="card__container">
-          {
+        <Card></Card>
+          {/* {
             // <Card
             // title='some'
             // description='string'></Card>
@@ -44,7 +45,7 @@ function App () {
             isSelected={card.isSelected}>
             </Card>
             )
-          }
+          } */}
         </div>
       </div>
   );
