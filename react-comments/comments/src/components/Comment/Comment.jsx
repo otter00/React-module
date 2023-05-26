@@ -34,26 +34,26 @@ export default function Comment() {
     }
 
     return(
-        <div className="form">
-        <form onSubmit={addComment} className="form__body">
-          <h2 className="form__tilte">Comments Chart</h2>
-          <div className="form__item">
+        <div className={CommentStyle.form}>
+        <form onSubmit={addComment} className={CommentStyle.form__body}>
+          <h2 className={CommentStyle.form__tilte}>Comments Chart</h2>
+          <div className={CommentStyle.form__item}>
             <textarea
               onChange={onChangeText}
               value={text}
               name="message"
-              className="form__input"
-              placeholder="добавьте коммент"
+              className={CommentStyle.form__input}
+              placeholder="write a comment"
               ref={focusField}
             />
           </div>
-          <button className="form__button">Add</button>
+          <button className={CommentStyle.form__button}>Add</button>
   
-          <div className="users-comments">
-            <ul className="users-comment-list">
+          <div className={CommentStyle.written__comments}>
+            <ul className={CommentStyle.comments__list}>
               {comments.map((comment, index) => {
                 return (
-                  <li className="users-comment" key={index}>
+                  <li className={CommentStyle.comment__item} key={index}>
                     {comment}
                   </li>
                 );

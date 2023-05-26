@@ -19,12 +19,11 @@ body {
     height: 100%;
     font-size: 14px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    line-height: 1;
 }
 
 .form {
     max-width: 550px;
-    margin: 0 auto;
+    margin: 50px auto;
     color: white;
     padding: 40px;
 }
@@ -35,10 +34,14 @@ body {
 }
 
 .form__tilte {
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 30px;
     text-align: center;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1;
 }
 
 .form__item {
@@ -56,7 +59,7 @@ body {
 }
 
 .form__input:focus {
-    box-shadow: 0 0 15px #9acbe3;
+    box-shadow: 0 0 15px #a69ae3;
 }
 
 textarea .form__input {
@@ -65,14 +68,14 @@ textarea .form__input {
     padding: 20px;
 }
 
-.users-comments {
+.written__comments {
     width: 100%;
     font-size: 20px;
     border-radius: 5px;
     padding: 5px;
 }
 
-.users-comment-list {
+.comments__list {
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
@@ -80,11 +83,11 @@ textarea .form__input {
     padding: 5px;
 }
 
-.users-comment-list>li:last-child {
+.comments__list>li:last-child {
     color: #89a2e8;
 }
 
-.users-comment {
+.comment__item {
     margin-bottom: 5px;
 }
 
@@ -94,7 +97,7 @@ textarea .form__input {
     justify-content: center;
     align-items: center;
     min-height: 60px;
-    background-color: #7a956b;
+    background-color: #6e6b95;
     color: white;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -102,14 +105,14 @@ textarea .form__input {
     font-weight: 700;
     cursor: pointer;
     border-radius: 20px;
-    box-shadow: 0 5px 0 #252d20;
+    box-shadow: 0 5px 0 #20262d;
     transition: background-color 0.5s ease 0s;
     position: relative;
     top: 0;
 }
 
 .form__button:hover {
-    background-color: #44533c;
+    background-color: #3c3d53;
 }
 
 .form__button:active {
