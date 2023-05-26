@@ -1,0 +1,7 @@
+.form__container > * {
+  display: flex;
+  flex-direction: column;
+}
+.form__container > * * {
+  margin: 7px;
+}/*# sourceMappingURL=Input.module.css.map */
