@@ -1,4 +1,4 @@
-import React, {useEffect, useState, useRef} from 'react';
+import React, {useState, useRef} from 'react';
 import CommentStyle from './Comment.module.scss';
 
 export default function Comment() {
@@ -16,7 +16,7 @@ export default function Comment() {
   
       const filterWords = ["viagra", "xxx"];
       let filteredСomment = comment.text;
-      
+
       for (let word of filterWords) {
         let reg = new RegExp(word, "ig");
         filteredСomment = filteredСomment.replace(reg, "***");
@@ -36,7 +36,7 @@ export default function Comment() {
     return(
         <div className="form">
         <form onSubmit={addComment} className="form__body">
-          <h2 className="form__tilte">Добро пожаловать на сайт!</h2>
+          <h2 className="form__tilte">Comments Chart</h2>
           <div className="form__item">
             <textarea
               onChange={onChangeText}
@@ -47,7 +47,7 @@ export default function Comment() {
               ref={focusField}
             />
           </div>
-          <button className="form__button">Добавить</button>
+          <button className="form__button">Add</button>
   
           <div className="users-comments">
             <ul className="users-comment-list">

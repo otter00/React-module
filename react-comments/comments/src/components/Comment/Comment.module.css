@@ -18,9 +18,8 @@ html,
 body {
   height: 100%;
   font-size: 14px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   line-height: 1;
-  background-color: rgb(141, 142, 182);
 }
 
 .form {
@@ -28,12 +27,6 @@ body {
   margin: 0 auto;
   color: white;
   padding: 40px;
-  background-color: rgb(27, 29, 81);
-  /* background-color: #7a956b; */
-}
-
-.form * {
-  outline: none;
 }
 
 .form__body {
@@ -112,49 +105,6 @@ textarea .form__input {
   display: none;
 }
 
-.options__input:checked + .options__label::after {
-  transform: scale(1);
-}
-
-.options__label {
-  display: inline-flex;
-  font-size: 16px;
-  line-height: 140%;
-  align-items: center;
-  position: relative;
-  cursor: pointer;
-}
-
-.options__label::before {
-  content: "";
-  align-self: flex-start;
-  flex: 0 0 24px;
-  height: 24px;
-  background-color: white;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-
-.options__label::after {
-  transition: transform 0.3s ease 0s;
-  content: "";
-  position: absolute;
-  top: 4px;
-  left: 4px;
-  width: 16px;
-  height: 16px;
-  background-color: rgb(27, 29, 81);
-  border-radius: 50%;
-  transform: scale(0);
-}
-
-.select {
-  height: 50px;
-  width: 100%;
-  border-radius: 5px;
-  padding: 0px 20px;
-}
-
 .users-comments {
   /* display: flex; */
   /* flex-direction: column; */
@@ -230,50 +180,6 @@ textarea .form__input {
 
 .file__preview img {
   max-width: 100%;
-}
-
-.checkbox__input {
-  display: none;
-}
-
-.checkbox__input:checked + .checkbox__label::after {
-  transform: scale(1);
-}
-
-.checkbox__label {
-  font-size: 16px;
-  line-height: 140%;
-  display: inline-flex;
-  align-items: center;
-  position: relative;
-  cursor: pointer;
-}
-
-.checkbox__label::before {
-  content: "";
-  align-self: flex-start;
-  flex: 0 0 24px;
-  height: 24px;
-  background-color: white;
-  border-radius: 4px;
-  margin-right: 10px;
-}
-
-.checkbox__label::after {
-  transition: transform 0.5s ease 0s;
-  content: "";
-  width: 16px;
-  height: 16px;
-  position: absolute;
-  top: 4px;
-  left: 4px;
-  background-color: rgb(27, 29, 81);
-  border-radius: 4px;
-  transform: scale(0);
-}
-
-.checkbox__label a {
-  color: #7a956b;
 }
 
 .form__button {
