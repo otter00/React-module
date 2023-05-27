@@ -6,7 +6,7 @@ export default function Comment() {
     const [text, setText] = useState("");
     const [comments, setComments] = useState([]);
     const focusField = useRef(null);
-  
+
     function onChangeText(event) {
       setText(event.target.value);
     }
@@ -26,41 +26,43 @@ export default function Comment() {
   
       setText("");
     }
-  
-    function addComment(event) {
+
+      function addComment(event) {
       event.preventDefault();
       checkComment();
       focusField.current.focus();
     }
 
-    return(
-        <div className={CommentStyle.form}>
-        <form onSubmit={addComment} className={CommentStyle.form__body}>
-          <h2 className={CommentStyle.form__tilte}>Comments Chart</h2>
-          <div className={CommentStyle.form__item}>
-            <textarea
-              onChange={onChangeText}
-              value={text}
-              name="message"
-              className={CommentStyle.form__input}
-              placeholder="write a comment"
-              ref={focusField}
-            />
-          </div>
-          <button className={CommentStyle.form__button}>Add</button>
-  
-          <div className={CommentStyle.written__comments}>
-            <ul className={CommentStyle.comments__list}>
-              {comments.map((comment, index) => {
-                return (
-                  <li className={CommentStyle.comment__item} key={index}>
-                    {comment}
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
-        </form>
-      </div>            
-    )
+  return(
+    <form onSubmit={addComment}>
+    <input 
+    type="text" 
+    className={CommentStyle.comment__field} 
+    placeholder="add your comment" 
+    ref={focusField}
+    onChange={onChangeText}
+    value={text} />
+
+    <button 
+    className={CommentStyle.add__comment}>
+      Add
+    </button>
+
+    <div 
+      className="content">
+          <ul className="content__list">
+            {comments.map((comment, index) => {
+              return (
+                <li 
+                className="content__item"
+                style={{width: 50 + 'px'}}
+                key={index}>
+                  {comment}
+                </li>
+              );
+            })}
+          </ul>
+    </div>
+    </form>
+  )
 }
